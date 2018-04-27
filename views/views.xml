@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="calyps.list">
+      <field name="name">calyps list</field>
+      <field name="model">calyps.calyps</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="calyps.action_window">
+      <field name="name">calyps window</field>
+      <field name="res_model">calyps.calyps</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="calyps.action_server">
+      <field name="name">calyps server</field>
+      <field name="model_id" ref="model_calyps_calyps"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="calyps" id="calyps.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="calyps.menu_1" parent="calyps.menu_root"/>
+    <menuitem name="Menu 2" id="calyps.menu_2" parent="calyps.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="calyps.menu_1_list" parent="calyps.menu_1"
+              action="calyps.action_window"/>
+    <menuitem name="Server to list" id="calyps" parent="calyps.menu_2"
+              action="calyps.action_server"/>
+    -->
+  </data>
+</odoo>
